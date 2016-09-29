@@ -1,0 +1,20 @@
+{
+    "prompts": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "message": "Project name"
+        },
+        "description": {
+            "type": "string",
+            "required": false,
+            "message": "Project description",
+            "default": "React Workshop Demo 2"
+        },
+        "author": {
+            "type": "string",
+            "message": "Author"
+        }
+    },
+    "completionMessage": "To get started:\n\n{{#unless inPlace}}  cd {{destDirName}}\n{{/unless}}  npm install\n  npm run dev"
+}
